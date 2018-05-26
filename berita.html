@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
-	<title>PeduliSurabay</title>
+	<title>Bantuan Korban</title>
 	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/berita.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/beranda.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <script type="text/javascript" src="assets/js/angular.min.js"></script>
 
 </head>
 <body>
@@ -74,40 +75,10 @@
           <p>10 hari</p>
         </div>
       </div>
-
       <a href="donasi.html"><button type="button" class="btn btn-info btn-lg btn-block rounded">DONASI SEKARANG</button></a>
     </div>
  	</div>	
  </div>
- <!-- Footer -->
-	<div class="row backgroud-grey">
-	<div class="col-md-3">
-		<p>LAYANAN DONATUR</p>
-		<p><a>GALANG DANA</a></p>
-		<p><a>DONASI</a></p>
-		<p><a>BIRTHDAY</a></p>
-		</div>
-	<div class="col-md-3">
-		<p>JELAJAHI DONASIKU</p>
-		<p><a>APA ITU DONASIKU</a></p>
-		<p><a>SYARAT DAN KETENTUAN</a></p>
-		<p><a href="file:///C:/Users/Lenovo/Documents/Tugas%20Semester%204/Pemrogaman%20Web/Final%20Project/Script/Kebijakan/kebijakan.html">KEBIJAKAN</a></p>
-		
-	</div>
-	<div class="col-md-3">
-		<p>SPONSORSHIP</p>
-			<img id="amikom" src="assets/img/amikom.png" alt="Card image cap">
-	</div>
-	<div class="col-md-3 center">
-		<p>PARTNERSHIP</p>
-		
-			<img class="bank" src="assets/img/bri.png" alt="Card image cap">
-			<br>
-			<img class="bank" src="assets/img/mandiri.png" alt="Card image cap">
-			<img class="bank" src="assets/img/bni.png" alt="Card image cap">
-
-		</div>
-	</div>
-</div>
+<div ng-include="'footer.html'"></div>
 </body>
 </html>
