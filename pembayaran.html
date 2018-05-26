@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pembayaran</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/pembayaran.css">
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/beranda.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/donasi.css">
+</head>
+<body>
+<!-- navbar -->
+<div class="'navbar.html'">
+</div>
+<!--Main-->
+<div class="container">
+  <div class="col-md-6 offset-md-3">
+  	<ul class="nav justify-content-center nav-fill nav-tabs">
+    				<li class="nav-item">
+    					<a class="nav-link" href="#">1.Donasi</a>
+    				</li>
+    				<li class="nav-item">
+    					<a class="nav-link active" href="#">2.Pembayaran</a>
+    				</li>
+    </ul>
+    <br>
+    <form>
+      <center>
+        <p>NOMOR HP</p>
+        <p>PASTIKAN NOMOR HP ANDA AKTIF SAAT MENERIMA SMS STATUS DONASI ANDA</p>
+      </center>
+      <div class="form-group">
+        <div class="container">
+          <center>
+            <div class="col-md-10">
+              <input class="form-control" type="text"  name="nomor" maxlength="10" class="required">
+            </div>
+          </center>
+        </div>
+      </div>
+        <center>
+          <p>PILIH METODE PEMBAYARAN</p>
+        </center>
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input"><img src="assets/img/mandiri.png" width="15%" > BANK MANDIRI
+        </div>
+        <label class="container">
+            <input type="radio"><img src="assets/img/bri.png" width="10%"> BANK BRI
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">
+            <input type="radio"><img src="assets/img/bni.png" width="15%"> BANK BNI
+            <span class="checkmark"></span>
+        </label>
+      <div class="form-group">
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Footer -->
+<div ng-include="'footer.html'">
+</div>      
+</body>
+</html>
