@@ -2,6 +2,9 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+body{
+    background-color: #f2f3f4;
+}
 .twitter-share, .facebook-share {
   background: #fff;
   color: rgb(87, 207, 244);
