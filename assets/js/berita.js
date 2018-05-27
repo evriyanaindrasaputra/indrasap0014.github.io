@@ -1,8 +1,17 @@
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.0';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+var twitterShare = document.querySelector('[data-js="twitter-share"]');
+
+twitterShare.onclick = function(e) {
+  e.preventDefault();
+  var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup', 'height=350,width=600');
+  if(twitterWindow.focus) { twitterWindow.focus(); }
+    return false;
+  }
+
+var facebookShare = document.querySelector('[data-js="facebook-share"]');
+
+facebookShare.onclick = function(e) {
+  e.preventDefault();
+  var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup', 'height=350,width=600');
+  if(facebookWindow.focus) { facebookWindow.focus(); }
+    return false;
+}

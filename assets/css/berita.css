@@ -2,3 +2,17 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+.twitter-share, .facebook-share {
+  background: #fff;
+  color: rgb(87, 207, 244);
+  cursor: pointer;
+  display: inline-block;
+  padding: 1em 2em;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  
+  &:hover {
+    position: relative;
+    top: -1px;
+  }
+}
