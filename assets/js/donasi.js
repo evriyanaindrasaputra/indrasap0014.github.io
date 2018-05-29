@@ -6,3 +6,11 @@
             }
         });
     });
+$(document).ready(function(){
+	 $('button').click(function(){
+		 var rupiah = $('#number').val();
+		 if(rupiah == ''){
+			 alert('donasi tidak boleh kosong')	 
+		} 
+	})
+})
