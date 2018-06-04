@@ -83,8 +83,7 @@ $(function() {
             $iconTag.removeClass($iconClass + " " + $divClass);
   		}, $msgShowTime);
     }
-});
-function onSuccess(googleUser) {
+    function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
     }
     function onFailure(error) {
@@ -101,3 +100,4 @@ function onSuccess(googleUser) {
         'onfailure': onFailure
       });
     }
+});
