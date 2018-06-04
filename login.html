@@ -17,6 +17,25 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <meta name="google-signin-client_id" content="310244644284-2e2vog822rvblm5hqjleee346uebfgdo.apps.googleusercontent.com">
+    <script type="text/javascript">
+      function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+    </script>
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </head>
 <body style="height: 100%;">
