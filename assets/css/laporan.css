@@ -8,3 +8,16 @@ form {
 .bgdiv{
 	background-color: #baf989;
 }
+.jarak{
+    margin:10px;
+}
+#test{
+	margin-left: 13px;
+}
+p{
+	font-family: sans-serif;
+}
+p.total{
+	font-size: 20px;
+	color: blue;
+}
